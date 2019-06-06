@@ -20,7 +20,7 @@ getChatData('https://api.myjson.com/bins/18ce70',
 	  	for (let i = 0; i < messages.length; i++) {		
 	  		let hr = parseInt(messages[i].timestamp.substring(11, 13));
 			let min = parseInt(messages[i].timestamp.substring(14, 16));
-			//Add a leading 0 to mins to the mins that begin with 0 (:03)
+			//Add a leading 0 to the single digit mins  (:03)
 			let absMin = (min < 10 ? "0" : "") + min;
 			let time;
 
